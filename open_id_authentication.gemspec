@@ -13,14 +13,14 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile"]
 
-  s.add_dependency "rails", "~> 4.1.0"
-  s.add_dependency "bcrypt-ruby", "3.1.0"
+  s.add_dependency "bcrypt", "~> 3.1"
+  s.add_dependency "rails", "~> 4.1"
+  s.add_dependency "rack-openid", "~> 1.4"
 
   s.add_development_dependency "sqlite3"
-  s.add_development_dependency "rspec-rails", "~> 2.14.0"
-  s.add_development_dependency "factory_girl_rails", "~> 4.0"
-  s.add_development_dependency "rspec_random", "~> 0.0.1"
-  s.add_development_dependency "shoulda-matchers"
-  s.add_development_dependency "specstar-controllers", "~> 0.0.9"
-  s.add_development_dependency "webrat"
+  s.add_development_dependency "rspec-rails", "~> 3.2"
+  s.add_development_dependency "factory_girl_rails", "~> 4.1"
+  s.add_development_dependency "specstar-support-random", "~> 0.1"
+  s.add_development_dependency "specstar-controllers", "~> 0.1"
+  s.add_development_dependency "capybara", "~> 2.4"
 end
